@@ -11,10 +11,9 @@ Colors :
 
 @import url("pygment.css");
 
-
 /* Latout */
 
-article,
+/*article,
 figcaption,
 figure,
 footer,
@@ -23,13 +22,15 @@ nav,
 section,
 time {
   display: block;
-}
+}*/
+
 
 html {
   font-size: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
@@ -37,7 +38,7 @@ body {
   text-align: left;
   color: #4D4D4C;
   padding: 0;
-  min-width: 740px;
+  /*width: 100%;*/
 }
 
 header {
@@ -45,23 +46,34 @@ header {
   height: 50px;
   line-height: 50px;
   padding: 0 1em;
-}
-
-.wrapper {
-  display: table;
   width: 100%;
 }
 
+section {
+    width: 100%;
+    display: block;
+}
+
+aside {
+    width: 100%;
+    display: block;
+}
+
+.wrapper {
+  /*display: table;*/
+  /*width: 100%;*/
+}
+
 .content {
-  display: table-cell;
+  /*display: table-cell;*/
   border-left: 1px solid #d6d6d6;
   border-right: 1px dotted #D6D6D6;
   padding: 0 20px 1em 20px;
 }
 
 .sidebar {
-  display: table-cell;
-  width: 25%;
+  /*display: table-cell;*/
+  width: 20%;
   border-right: 1px solid #d6d6d6;
   padding: 0 20px 1em 20px;
 }
@@ -88,13 +100,13 @@ header a.title {
 header .feeds {
   float: right;
   text-align: right;
-  width: 25%;
+  width: 20%;
   height: 41px;
   padding-top: 9px;
 }
 
 header .feeds a {
-  display: block;
+  /*display: block;*/
   float: right;
   padding-right: 5px;
   width: 40px;
@@ -196,20 +208,20 @@ article.summary > div {
 
 article.full .metadata,
 article.summary .metadata {
-  padding: 1%;  
+  padding: 1%;
   border: 1px dotted #EFEFEF;
   box-shadow: 0.1em 0.1em 0.1em #EFEFEF;
   font-style: italic;
 }
 
 article.full .metadata {
-  width: 25%;
+  width: 20%;
   float: right;
   margin: 0 0 2% 1%;
 }
 
 article.summary .metadata {
-  width: 23%;
+  width: 20%;
   float: left;
   margin: 0 1% 2% 0 ;
 }
@@ -246,7 +258,7 @@ ol.archive li .tags
 
 .social a {}
 
-.social i { 
+.social i {
   float: left;
   margin-right: 3px;
   padding-top: 4px;
@@ -274,7 +286,7 @@ ul.tagcloud {
 }
 
 ul.tagcloud li {
-    display: inline-block;
+    /*display: inline-block;*/
 }
 
 li.tag-1 { font-size: 175%; margin: 0 1em; }
@@ -291,21 +303,47 @@ li.tag-4 { font-size: 110%; margin: 0 1em; }
 
 /* Responsive */
 
-@media (min-width: 1280px) {
-  body {
-    margin: 0 16%;
-  }
+@media (min-width: 1800px) {
+    section {
+        width: 90%;
+        display: inline-table;
+    }
+
+    aside {
+        width: 7%;
+        display: inline-table;
+    }
+    body {
+        margin: 0 16%;
+    }
 }
 
-@media (max-width: 1280px) {
-  body {
-    margin: 0 12%;
-  }
+@media screen and (min-device-width: 1200px) {
+    section {
+        width: 85%;
+        display: inline-table;
+    }
+
+    aside {
+        width: 13%;
+        display: inline-table;
+    }
+    body {
+        margin: 0 12%;
+    }
 }
 
-@media (max-width: 979px) {
-  body {
-    margin: 0 4%;
-  }
-}
+@media screen and (min-device-width: 760px) {
+    section {
+        width: 75%;
+        display: inline-table;
+    }
 
+    aside {
+        width: 23%;
+        display: inline-table;
+    }
+    body {
+        margin: 0 4%;
+    }
+}
