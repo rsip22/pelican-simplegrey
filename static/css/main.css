@@ -11,19 +11,7 @@ Colors :
 
 @import url("pygment.css");
 
-/* Latout */
-
-/*article,
-figcaption,
-figure,
-footer,
-header,
-nav,
-section,
-time {
-  display: block;
-}*/
-
+/* Layout */
 
 html {
   font-size: 100%;
@@ -59,20 +47,13 @@ aside {
     display: block;
 }
 
-.wrapper {
-  /*display: table;*/
-  /*width: 100%;*/
-}
-
 .content {
-  /*display: table-cell;*/
   border-left: 1px solid #d6d6d6;
   border-right: 1px dotted #D6D6D6;
   padding: 0 20px 1em 20px;
 }
 
 .sidebar {
-  /*display: table-cell;*/
   width: 20%;
   border-right: 1px solid #d6d6d6;
   padding: 0 20px 1em 20px;
@@ -84,7 +65,6 @@ footer {
   padding: 0 1em;
   font-size: 0.8em;
 }
-
 
 /* Header */
 
@@ -100,13 +80,13 @@ header a.title {
 header .feeds {
   float: right;
   text-align: right;
-  width: 20%;
+  width: 25%;
   height: 41px;
   padding-top: 9px;
 }
 
 header .feeds a {
-  /*display: block;*/
+  display: block;
   float: right;
   padding-right: 5px;
   width: 40px;
@@ -128,7 +108,6 @@ header .pages a {
 
 /* Sidebar */
 
-
 /* Titles */
 
 h1, h2, h3, h4, h5, h6 {
@@ -148,7 +127,6 @@ h1 a {
   color: inherit;
   border-bottom: none;
 }
-
 
 /* Texts */
 
@@ -194,7 +172,6 @@ hr {
   border-radius: 5px;
 }
 
-
 /* Article */
 
 article.summary {
@@ -215,13 +192,13 @@ article.summary .metadata {
 }
 
 article.full .metadata {
-  width: 20%;
+  width: 25%;
   float: right;
   margin: 0 0 2% 1%;
 }
 
 article.summary .metadata {
-  width: 20%;
+  width: 23%;
   float: left;
   margin: 0 1% 2% 0 ;
 }
@@ -243,7 +220,6 @@ ol.archive li .tags
   font-size: 0.8em;
   margin: 0;
 }
-
 
 /* Social */
 
@@ -286,7 +262,7 @@ ul.tagcloud {
 }
 
 ul.tagcloud li {
-    /*display: inline-block;*/
+    display: inline-block;
 }
 
 li.tag-1 { font-size: 175%; margin: 0 1em; }
